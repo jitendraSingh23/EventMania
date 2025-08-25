@@ -1,0 +1,79 @@
+Build a complete frontend for a web app using Next.js (App Router), TypeScript, Tailwind CSS, and NextAuth for authentication. The app should support two roles: Event Organizer and Participant.
+
+🏗️ App Features:
+1. Authentication (NextAuth)
+Email/password and Google login
+
+Role selection (Organizer or Participant) during signup
+
+2. Landing Page
+Hero section with a platform intro
+
+Features overview (e.g., "Create events", "Secure ticketing", "QR code verification")
+
+CTA buttons: "Create Event" and "Explore Events"
+
+3. Dashboard Pages
+Authenticated dashboard using NextAuth session
+
+a. Organizer Dashboard
+“Create Event” form with the following inputs:
+
+Event Name, Description, Category
+
+Ticket Price, Total Seats
+
+Date/Time picker
+
+Location
+
+Event Banner Upload (optional)
+
+Rules (rich text input)
+
+External links section (e.g., YouTube, Telegram)
+
+List of created events with:
+
+Total sales
+
+Button to view attendees
+
+QR verification mode (organizer can scan QR codes)
+
+b. Participant Dashboard
+View all joined events
+
+Tickets section with:
+
+QR Code download/view
+
+Event details
+
+4. Event Detail Page
+Public page accessible via a shared link
+
+Displays full event details, rules, external links, and “Buy Ticket” button
+
+5. Ticket Purchase Flow
+Secure checkout (UI only for now, backend integration optional)
+
+Confirmation with a downloadable/displayed QR code
+
+6. QR Code Scanning Page
+Organizer-only access
+
+Camera-based QR code scanner (using react-qr-reader or similar)
+
+📦 Tech Stack
+Next.js (App Router, TypeScript)
+
+Tailwind CSS for UI
+
+NextAuth for authentication
+
+Prisma for models (Event, User, Ticket, etc.)
+
+PostgreSQL as the database (schema can be mocked or assumed)
+
+🎯 Focus on clean UI, good UX, and modular component structure. Use server components where appropriate and keep it production-quality.
